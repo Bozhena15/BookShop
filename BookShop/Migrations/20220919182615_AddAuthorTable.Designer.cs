@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookShop.Migrations
 {
     [DbContext(typeof(BookShopContext))]
-    [Migration("20220918183126_AddBookTable")]
-    partial class AddBookTable
+    [Migration("20220919182615_AddAuthorTable")]
+    partial class AddAuthorTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -48,7 +48,7 @@ namespace BookShop.Migrations
                     b.ToTable("Autors");
                 });
 
-            modelBuilder.Entity("BookShop.Models.Book", b =>
+            modelBuilder.Entity("BookShop.Models.Edition", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -56,34 +56,20 @@ namespace BookShop.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("AutorId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("BookCost")
-                        .HasColumnType("int");
-
-                    b.Property<int>("BookCount")
-                        .HasColumnType("int");
-
-                    b.Property<string>("BookName")
+                    b.Property<string>("CountryOrigin")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("BookPrice")
-                        .HasColumnType("int");
+                    b.Property<string>("EditionName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("EditionId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("GenreId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("GraduationYears")
+                    b.Property<int>("Years")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Books");
+                    b.ToTable("Editions");
                 });
 
             modelBuilder.Entity("BookShop.Models.User", b =>

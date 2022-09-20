@@ -17,5 +17,8 @@ namespace BookShop.Models
         public int AutorId { get; set; }
         public int GenreId { get; set; }
         public int EditionId { get; set; }
+       public virtual Autor Autor { get; set; }
+        public virtual Genre Genre { get; set; }
+        public virtual Edition Edition { get; set; }
     }
 }
