@@ -9,14 +9,15 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace BookShop.EntityConfiguration
 {
-    public class GenreConfiguration:IEntityTypeConfiguration<Genre>
+    public class UserOrderConfiguration: IEntityTypeConfiguration<Order>
     {
-        public void Configure(EntityTypeBuilder<Genre> builder)
+        public void Configure(EntityTypeBuilder<Order> builder)
         {
-            builder.HasKey(x=>x.Id);
+            builder.HasKey(x => x.Id);
 
-            builder.Property(x=>x.BookGenre);
-            
+            builder.Property(x=>x.UserId);
+            builder.Property(x => x.BookId);
+            builder.Property(x=>x.BookCount);
         }
     }
 }
