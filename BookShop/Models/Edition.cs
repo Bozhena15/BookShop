@@ -12,5 +12,6 @@ namespace BookShop.Models
         public string EditionName { get; set; }
         public string CountryOrigin { get; set; }
         public int Years { get; set; }
+        public List<Book> Books { get; set; }
     }
 }

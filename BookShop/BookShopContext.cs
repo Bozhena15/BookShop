@@ -2,7 +2,7 @@
 using Microsoft.SqlServer;
 using BookShop.EntityConfiguration;
 using BookShop.Models;
-
+using Microsoft.EntityFrameworkCore.Internal;
 
 namespace BookShop
 {
@@ -13,6 +13,7 @@ namespace BookShop
         public DbSet<Edition> Editions { get; set; }
         public DbSet<Genre> Genre { get; set; }
 
+        public DbSet<Book> Books { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) 
         {
             optionsBuilder.UseSqlServer("");
@@ -24,6 +25,7 @@ namespace BookShop
             modelBuilder.ApplyConfiguration(new AutorConfiguration());
             modelBuilder.ApplyConfiguration(new EditionConfiguration());
             modelBuilder.ApplyConfiguration(new GenreConfiguration());
+            modelBuilder.ApplyConfiguration(new BookConfiguration());
         }
     }
 }
