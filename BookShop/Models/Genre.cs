@@ -11,6 +11,6 @@ namespace BookShop.Models
         public int Id { get; set; }
         public string BookGenre { get; set; }
 
-
+        public List<Book> Books { get; set; }
     }
 }

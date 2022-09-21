@@ -15,5 +15,7 @@ namespace BookShop.Models
         public string SerName { get; set; }
         public int Years { get; set; }
 
+        public List<Order> Orders { get; set; }
+
     }
 }
