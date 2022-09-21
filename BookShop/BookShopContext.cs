@@ -12,6 +12,7 @@ namespace BookShop
         public DbSet<Autor> Autors { get; set; }
         public DbSet<Edition> Editions { get; set; }
         public DbSet<Genre> Genre { get; set; }
+        public DbSet<Order> Orders { get; set; }
 
         public DbSet<Book> Books { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) 
@@ -25,6 +26,7 @@ namespace BookShop
             modelBuilder.ApplyConfiguration(new AutorConfiguration());
             modelBuilder.ApplyConfiguration(new EditionConfiguration());
             modelBuilder.ApplyConfiguration(new GenreConfiguration());
+            modelBuilder.ApplyConfiguration(new UserOrderConfiguration());
             modelBuilder.ApplyConfiguration(new BookConfiguration());
         }
     }

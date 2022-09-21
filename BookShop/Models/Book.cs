@@ -20,5 +20,7 @@ namespace BookShop.Models
        public virtual Autor Autor { get; set; }
         public virtual Genre Genre { get; set; }
         public virtual Edition Edition { get; set; }
+
+        public List<Order> Orders { get; set; }
     }
 }
