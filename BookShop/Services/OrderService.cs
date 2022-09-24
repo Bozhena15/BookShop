@@ -28,7 +28,6 @@ namespace BookShop.Services
             if(order == null)
             {
                 throw new NullReferenceException(nameof(order));
-
             }
             _bookShopContext.Orders.Add(order);
             _bookShopContext.SaveChanges();
