@@ -39,7 +39,6 @@ namespace BookShop.Services
             if(order == null)
             {
                 throw new NullReferenceException(nameof(order));
-
             }
             _bookShopContext.Orders.Remove(order);
             _bookShopContext.SaveChanges();
