@@ -14,7 +14,11 @@ namespace BookShop.Services
 
         public OrderService(BookShopContext bookShopContext)
         {
+<<<<<<< HEAD
             _bookShopContext=bookShopContext;
+=======
+            _bookShopContext = bookShopContext;
+>>>>>>> f9dfb05ded525fba54ee64ad27f256e23fe504a9
         }
 
         public IEnumerable<Order> GetOrders()
@@ -25,7 +29,11 @@ namespace BookShop.Services
 
         public void AddNewOrders(Order order)
         {
+<<<<<<< HEAD
             if (order == null)
+=======
+            if(order == null)
+>>>>>>> f9dfb05ded525fba54ee64ad27f256e23fe504a9
             {
                 throw new NullReferenceException(nameof(order));
             }
@@ -33,11 +41,18 @@ namespace BookShop.Services
             _bookShopContext.SaveChanges();
         }
 
+<<<<<<< HEAD
         public void RemoveOrders(int id)
         {
             var order = _bookShopContext.Orders.FirstOrDefault(x => x.Id == id);
 
             if (order == null)
+=======
+        public void DeleteOrder(int id)
+        {
+            var order = _bookShopContext.Orders.FirstOrDefault(x => x.Id == id);
+            if(order == null)
+>>>>>>> f9dfb05ded525fba54ee64ad27f256e23fe504a9
             {
                 throw new NullReferenceException(nameof(order));
             }
