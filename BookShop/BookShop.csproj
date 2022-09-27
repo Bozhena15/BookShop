@@ -26,6 +26,12 @@
   <ItemGroup>
   <Folder Include="Enums\" />
   <Folder Include="Help\" />
+  <Folder Include="Windows\Authors\" />
+  <Folder Include="Windows\Editions\" />
+  <Folder Include="Windows\Books\" />
+  <Folder Include="Windows\Genres\" />
+  <Folder Include="Windows\Users\" />
+  <Folder Include="Windows\Orders\" />
   </ItemGroup>
 
 </Project>
