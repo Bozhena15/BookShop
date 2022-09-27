@@ -26,12 +26,21 @@
   <ItemGroup>
   <Folder Include="Enums\" />
   <Folder Include="Help\" />
+<<<<<<< HEAD
   <Folder Include="Windows\Authors\" />
   <Folder Include="Windows\Editions\" />
   <Folder Include="Windows\Books\" />
   <Folder Include="Windows\Genres\" />
   <Folder Include="Windows\Users\" />
   <Folder Include="Windows\Orders\" />
+=======
+  <Folder Include="Window\Autors\" />
+  <Folder Include="Window\Books\" />
+  <Folder Include="Window\Editions\" />
+  <Folder Include="Window\Genres\" />
+  <Folder Include="Window\Orders\" />
+  <Folder Include="Window\Users\" />
+>>>>>>> 2639987221fe1e3160c3b3731f2d815b298ee4a1
   </ItemGroup>
 
 </Project>

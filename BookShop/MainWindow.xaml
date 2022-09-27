@@ -7,6 +7,66 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Button Content="Autor" HorizontalAlignment="Left" Margin="108,69,0,0" VerticalAlignment="Top" Height="46" RenderTransformOrigin="0.5,0.5" Width="108" Click="Button_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1" ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-179.785"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="Ganre" HorizontalAlignment="Left" Margin="104,144,0,0" VerticalAlignment="Top" Height="46" RenderTransformOrigin="0.5,0.5" Width="108">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1" ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-179.785"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="Edition" HorizontalAlignment="Left" Margin="104,236,0,0" VerticalAlignment="Top" Height="46" RenderTransformOrigin="0.5,0.5" Width="108">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1" ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-179.785"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="User" HorizontalAlignment="Left" Margin="440,69,0,0" VerticalAlignment="Top" Height="46" RenderTransformOrigin="0.5,0.5" Width="108">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1" ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-179.785"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="Order" HorizontalAlignment="Left" Margin="446,150,0,0" VerticalAlignment="Top" Height="46" RenderTransformOrigin="0.5,0.5" Width="108">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1" ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-179.785"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="Book" HorizontalAlignment="Left" Margin="443,239,0,0" VerticalAlignment="Top" Height="45" RenderTransformOrigin="0.5,0.5" Width="108">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1" ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-179.785"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
 
     </Grid>
 </Window>
